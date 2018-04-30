@@ -1,8 +1,12 @@
-num=raw_input("Enter a Number : ")
-for i in num:
-	if i<='0' or i>'9':
-		print("Invalid Input!")
-		exit()
+x=0
+while x==0:
+    try:
+        num=int(input("Enter a Number : "))
+        x=1
+    except:
+        print("Invalid Input ! ")
+        x=0
+    
 
 
 dict={}
